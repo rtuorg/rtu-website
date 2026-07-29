@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RTU Premium Events</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f6fb;
+}
+
+/* NAVBAR */
+nav{
+    background:#001f3f;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#fff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+    cursor:pointer;
+}
+
+nav ul li:hover{
+    color:#00d4ff;
+}
+
+/* HERO */
+.hero{
+    height:60vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678');
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:42px;
+    animation:fadeDown 1s ease;
+}
+
+/* EVENTS SECTION */
+.section{
+    padding:60px 50px;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.events{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.event-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.event-card:hover{
+    transform:translateY(-10px);
+}
+
+.event-img{
+    position:relative;
+}
+
+.event-img img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.date-badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#001f3f;
+    color:white;
+    padding:10px;
+    border-radius:8px;
+    text-align:center;
+    font-size:14px;
+}
+
+.event-content{
+    padding:20px;
+}
+
+.event-content h3{
+    margin-bottom:10px;
+}
+
+.event-content p{
+    font-size:14px;
+    color:gray;
+}
+
+.event-content button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    background:#00c3ff;
+    color:white;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:#001f3f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ANIMATION */
+@keyframes fadeDown{
+    from{opacity:0; transform:translateY(-30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+    }
+    .hero h1{
+        font-size:28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>RTU Events</h2>
+    <ul>
+        <li>Home</li>
+        <li>Upcoming</li>
+        <li>Past Events</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>University Events & Activities</h1>
+    <p>Stay updated with the latest happenings at RTU</p>
+</section>
+
+<!-- UPCOMING EVENTS -->
+<section class="section">
+    <h2>Upcoming Events</h2>
+    <div class="events">
+
+        <div class="event-card">
+            <div class="event-img">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865">
+                <div class="date-badge">12<br>Aug</div>
+            </div>
+            <div class="event-content">
+                <h3>Tech Fest 2026</h3>
+                <p>Annual technical fest with coding competitions & innovation challenges.</p>
+                <button>Register</button>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <div class="event-img">
+                <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+                <div class="date-badge">20<br>Sep</div>
+            </div>
+            <div class="event-content">
+                <h3>Cultural Fest</h3>
+                <p>Music, dance, and cultural performances from students across campus.</p>
+                <button>Register</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PAST EVENTS -->
+<section class="section">
+    <h2>Past Events</h2>
+    <div class="events">
+
+        <div class="event-card">
+            <div class="event-img">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+                <div class="date-badge">10<br>Jan</div>
+            </div>
+            <div class="event-content">
+                <h3>Placement Drive</h3>
+                <p>Top companies visited campus for recruitment and internship programs.</p>
+                <button>View Details</button>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <div class="event-img">
+                <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678">
+                <div class="date-badge">15<br>Feb</div>
+            </div>
+            <div class="event-content">
+                <h3>Workshop on AI</h3>
+                <p>Hands-on workshop covering AI tools, ML basics, and real-world projects.</p>
+                <button>View Details</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2021 RTU Events Portal | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
