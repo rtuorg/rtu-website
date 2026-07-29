@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RTU Contact Us</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f7fb;
+}
+
+/* NAVBAR */
+nav{
+background:#0a1f44;
+color:#fff;
+display:flex;
+justify-content:space-between;
+padding:15px 50px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+cursor:pointer;
+}
+
+/* HERO */
+.hero{
+height:50vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1');
+background-size:cover;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+animation:fadeDown 1s ease;
+}
+
+/* MAIN */
+.container{
+padding:60px 20px;
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+}
+
+/* CONTACT INFO */
+.contact-info{
+flex:1;
+min-width:300px;
+background:#fff;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contact-info h2{
+margin-bottom:20px;
+}
+
+.contact-info p{
+margin:10px 0;
+color:#555;
+}
+
+/* FORM */
+.contact-form{
+flex:1;
+min-width:300px;
+background:#fff;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.contact-form button{
+width:100%;
+padding:12px;
+background:#0a1f44;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact-form button:hover{
+background:#00aaff;
+}
+
+/* SUCCESS MESSAGE */
+.success{
+display:none;
+margin-top:15px;
+padding:15px;
+background:#d4edda;
+color:#155724;
+border-radius:8px;
+}
+
+/* MAP */
+.map{
+width:100%;
+margin-top:40px;
+}
+
+/* FOOTER */
+footer{
+background:#0a1f44;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+/* ANIMATION */
+@keyframes fadeDown{
+from{opacity:0; transform:translateY(-30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+nav{
+flex-direction:column;
+text-align:center;
+}
+.hero h1{
+font-size:28px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>RTU Portal</h2>
+<ul>
+<li>Home</li>
+<li>Admissions</li>
+<li>Verify</li>
+<li>Contact</li>
+</ul>
+</nav>
+
+<section class="hero">
+<h1>Contact Us</h1>
+<p>Rajasthan Technical University</p>
+</section>
+
+<div class="container">
+
+<!-- CONTACT INFO -->
+<div class="contact-info">
+<h2>Get in Touch</h2>
+<p><b>📍 Address:</b> RTU, Rawatbhata Road, Kota - 324010</p>
+<p><b>📞 Phone:</b> 0744-2473003</p>
+<p><b>☎ Exam:</b> 0744-2473861</p>
+<p><b>📧 Email:</b> info@rtu.org.in</p>
+<p><b>🕒 Working Hours:</b> Mon - Fri (10:00 AM - 5:00 PM)</p>
+</div>
+
+<!-- CONTACT FORM -->
+<div class="contact-form">
+<h2>Send Message</h2>
+
+<input type="text" id="name" placeholder="Your Name">
+<input type="email" id="email" placeholder="Your Email">
+<input type="text" id="subject" placeholder="Subject">
+<textarea id="message" rows="5" placeholder="Your Message"></textarea>
+
+<button onclick="sendMessage()">Send Message</button>
+
+<div class="success" id="successMsg">✅ Message sent successfully!</div>
+
+</div>
+
+</div>
+
+<!-- GOOGLE MAP -->
+<div class="map">
+<iframe 
+src="https://maps.google.com/maps?q=Rajasthan%20Technical%20University%20Kota&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="350" style="border:0;" allowfullscreen="">
+</iframe>
+</div>
+
+<footer>
+<p>© 2021 RTU | Contact Portal</p>
+</footer>
+
+<script>
+function sendMessage(){
+
+let name = document.getElementById("name").value.trim();
+let email = document.getElementById("email").value.trim();
+let subject = document.getElementById("subject").value.trim();
+let message = document.getElementById("message").value.trim();
+
+if(name=="" || email=="" || subject=="" || message==""){
+alert("⚠️ Please fill all fields");
+return;
+}
+
+// Email validation
+let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+if(!email.match(pattern)){
+alert("❌ Invalid Email");
+return;
+}
+
+// Fake submit (backend connect later)
+document.getElementById("successMsg").style.display="block";
+
+// Reset form
+document.getElementById("name").value="";
+document.getElementById("email").value="";
+document.getElementById("subject").value="";
+document.getElementById("message").value="";
+}
+</script>
+
+</body>
+</html>
