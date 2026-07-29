@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RTU Terms & Conditions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f7fb;
+}
+
+/* NAVBAR */
+nav{
+background:#0a1f44;
+color:#fff;
+display:flex;
+justify-content:space-between;
+padding:15px 50px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+cursor:pointer;
+}
+
+/* PROGRESS BAR */
+.progress-bar{
+height:5px;
+background:#00aaff;
+width:0%;
+position:fixed;
+top:0;
+left:0;
+z-index:2000;
+}
+
+/* HERO */
+.hero{
+height:40vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85');
+background-size:cover;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:36px;
+animation:fadeDown 1s ease;
+}
+
+/* CONTENT */
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+.terms{
+background:#fff;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+overflow:hidden;
+}
+
+.terms-header{
+padding:15px;
+font-weight:600;
+cursor:pointer;
+display:flex;
+justify-content:space-between;
+}
+
+.terms-content{
+max-height:0;
+overflow:hidden;
+transition:0.4s ease;
+padding:0 15px;
+color:#555;
+}
+
+.terms.active .terms-content{
+padding:15px;
+max-height:400px;
+}
+
+.icon{
+transition:0.3s;
+}
+
+.terms.active .icon{
+transform:rotate(180deg);
+}
+
+/* ACCEPT BOX */
+.accept-box{
+margin-top:30px;
+background:#fff;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.accept-box button{
+margin-top:15px;
+padding:12px 20px;
+border:none;
+border-radius:8px;
+background:#0a1f44;
+color:white;
+cursor:pointer;
+opacity:0.5;
+}
+
+.accept-box button.active{
+opacity:1;
+background:#00aaff;
+}
+
+/* FOOTER */
+footer{
+background:#0a1f44;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+/* ANIMATION */
+@keyframes fadeDown{
+from{opacity:0; transform:translateY(-30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+nav{
+flex-direction:column;
+text-align:center;
+}
+.hero h1{
+font-size:26px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+<h2>RTU Portal</h2>
+<ul>
+<li>Home</li>
+<li>Admissions</li>
+<li>Terms</li>
+<li>Contact</li>
+</ul>
+</nav>
+
+<section class="hero">
+<h1>Terms & Conditions</h1>
+<p>Rajasthan Technical University</p>
+</section>
+
+<div class="container">
+
+<div class="terms">
+<div class="terms-header">1. Acceptance of Terms <span class="icon">▼</span></div>
+<div class="terms-content">
+By accessing this website, you agree to comply with and be bound by these terms and conditions.
+</div>
+</div>
+
+<div class="terms">
+<div class="terms-header">2. Use of Website <span class="icon">▼</span></div>
+<div class="terms-content">
+Users must use this website for lawful purposes only and must not misuse the services provided.
+</div>
+</div>
+
+<div class="terms">
+<div class="terms-header">3. Intellectual Property <span class="icon">▼</span></div>
+<div class="terms-content">
+All content, including text, logos, and graphics, are the property of RTU and protected by copyright laws.
+</div>
+</div>
+
+<div class="terms">
+<div class="terms-header">4. User Responsibilities <span class="icon">▼</span></div>
+<div class="terms-content">
+Users are responsible for maintaining confidentiality of their login credentials and personal data.
+</div>
+</div>
+
+<div class="terms">
+<div class="terms-header">5. Limitation of Liability <span class="icon">▼</span></div>
+<div class="terms-content">
+RTU shall not be liable for any damages arising from use or inability to use the website.
+</div>
+</div>
+
+<div class="terms">
+<div class="terms-header">6. External Links <span class="icon">▼</span></div>
+<div class="terms-content">
+This website may contain links to third-party websites. RTU is not responsible for their content.
+</div>
+</div>
+
+<div class="terms">
+<div class="terms-header">7. Changes to Terms <span class="icon">▼</span></div>
+<div class="terms-content">
+RTU reserves the right to modify these terms at any time without prior notice.
+</div>
+</div>
+
+<div class="terms">
+<div class="terms-header">8. Governing Law <span class="icon">▼</span></div>
+<div class="terms-content">
+These terms shall be governed by applicable laws of India.
+</div>
+</div>
+
+<!-- ACCEPT SECTION -->
+<div class="accept-box">
+<label>
+<input type="checkbox" id="acceptCheck"> I agree to the Terms & Conditions
+</label>
+<br>
+<button id="acceptBtn">Accept</button>
+</div>
+
+</div>
+
+<footer>
+<p>© 2021 RTU | Terms & Conditions</p>
+</footer>
+
+<script>
+// ACCORDION
+document.querySelectorAll(".terms").forEach(item=>{
+item.addEventListener("click",()=>{
+item.classList.toggle("active");
+});
+});
+
+// PROGRESS BAR
+window.onscroll = function(){
+let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+let scrolled = (winScroll / height) * 100;
+document.getElementById("progressBar").style.width = scrolled + "%";
+};
+
+// ACCEPT BUTTON LOGIC
+let checkbox = document.getElementById("acceptCheck");
+let button = document.getElementById("acceptBtn");
+
+checkbox.addEventListener("change",()=>{
+if(checkbox.checked){
+button.classList.add("active");
+button.style.opacity="1";
+}else{
+button.classList.remove("active");
+button.style.opacity="0.5";
+}
+});
+
+button.addEventListener("click",()=>{
+if(!checkbox.checked){
+alert("⚠️ Please accept terms first");
+}else{
+alert("✅ Terms Accepted");
+}
+});
+</script>
+
+</body>
+</html>
