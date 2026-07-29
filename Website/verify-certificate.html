@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RTU Certificate Verification</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #00c6ff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0072ff;
+}
+
+/* Loader */
+.loader {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Result Card */
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+.valid {
+    background: rgba(0, 255, 150, 0.2);
+}
+
+.invalid {
+    background: rgba(255, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>RTU Certificate Verification</h1>
+</header>
+
+<div class="container">
+    <h2>Verify Your Certificate</h2>
+    <p>Enter Certificate ID below</p>
+
+    <input type="text" id="certId" placeholder="Enter Certificate ID">
+
+    <button onclick="verifyCertificate()">Verify Certificate</button>
+
+    <div class="loader" id="loader">🔄 Verifying...</div>
+
+    <div class="result" id="resultBox"></div>
+</div>
+
+<footer>
+    © 2021 RTU. All Rights Reserved.
+</footer>
+
+<script>
+
+// Dummy Database (Replace with API later)
+const certificates = {
+    "RTU12345": {
+        name: "Rahul Sharma",
+        course: "B.Tech Computer Science",
+        issueDate: "2026-01-15",
+        status: "Valid"
+    },
+    "RTU67890": {
+        name: "Priya Singh",
+        course: "MBA Marketing",
+        issueDate: "2025-12-20",
+        status: "Valid"
+    }
+};
+
+function verifyCertificate() {
+
+    let certId = document.getElementById("certId").value.trim();
+    let loader = document.getElementById("loader");
+    let resultBox = document.getElementById("resultBox");
+
+    resultBox.style.display = "none";
+    loader.style.display = "block";
+
+    setTimeout(() => {
+
+        loader.style.display = "none";
+
+        if (certificates[certId]) {
+
+            let data = certificates[certId];
+
+            resultBox.className = "result valid";
+            resultBox.innerHTML = `
+                <h3>✅ Certificate Verified</h3>
+                <p><b>Name:</b> ${data.name}</p>
+                <p><b>Course:</b> ${data.course}</p>
+                <p><b>Issue Date:</b> ${data.issueDate}</p>
+                <p><b>Status:</b> ${data.status}</p>
+                <p><b>Certificate ID:</b> ${certId}</p>
+            `;
+
+        } else {
+
+            resultBox.className = "result invalid";
+            resultBox.innerHTML = `
+                <h3>❌ Invalid Certificate</h3>
+                <p>Certificate ID not found</p>
+            `;
+        }
+
+        resultBox.style.display = "block";
+
+    }, 1500);
+}
+</script>
+
+</body>
+</html>
