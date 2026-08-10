@@ -1,0 +1,63 @@
+# ==========================================
+# ULTIMATE SECURITY & PRODUCTION .GITIGNORE
+# Project: www.rtu.org.in High-Security Portal
+# ==========================================
+
+# 1. Dependencies & Package Managers
+node_modules/
+jspm_packages/
+pnpm-lock.yaml
+
+# 2. Environment Variables & Sensitive Secrets (Zero-Leak Policy)
+.env
+.env.local
+.env.development
+.env.production
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+private_keys/
+credentials/
+
+# 3. Security Audit Logs, Traces & Debug Files
+security_audit.log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+audit-report.json
+
+# 4. OS-Specific Metadata & System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# 5. IDE, Editor & Local Tooling Settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+.project
+.settings/
+.classpath
+
+# 6. Temporary Build Artifacts, Testing & Caches
+dist/
+build/
+.cache/
+.parcel-cache/
+.eslintcache
+coverage/
+.nyc_output/

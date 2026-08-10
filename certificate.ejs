@@ -1,0 +1,236 @@
+<!-- Header Include Karein -->
+<%- include('partials/header') %>
+
+<!-- Print & Security Styles -->
+<style>
+    /* Professional A4 Print Optimization for Verification Report */
+    @media print {
+        @page { size: A4; margin: 15mm; }
+        body { background-color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        .no-print { display: none !important; }
+        .card { border: 2px solid #000 !important; box-shadow: none !important; margin-top: 0 !important; page-break-inside: avoid; }
+        .card-header { background-color: transparent !important; color: #000 !important; border-bottom: 2px solid #000; padding: 10px !important; margin-bottom: 15px;}
+        .print-only-title { display: block !important; text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 5px; text-transform: uppercase;}
+        .print-subtitle { display: block !important; text-align: center; font-size: 16px; margin-bottom: 30px; font-weight: bold; text-decoration: underline;}
+        .table { border-color: #000 !important; }
+        .table th, .table td { border-color: #000 !important; padding: 10px !important; font-size: 16px; word-break: break-word; }
+        .badge-success { border: 1px solid #28a745 !important; color: #28a745 !important; background: transparent !important; }
+        .badge-danger { border: 1px solid #dc3545 !important; color: #dc3545 !important; background: transparent !important; }
+    }
+    .print-only-title, .print-subtitle { display: none; }
+    
+    /* Authentic Watermark Styling */
+    .watermark-container { position: relative; z-index: 1; }
+    .rtu-watermark { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.08; width: 400px; z-index: -1; pointer-events: none; }
+    
+    /* Disabling Text Selection for Extra Security */
+    .noselect {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    /* Hide page content if JavaScript is disabled to prevent bypassing anti-snoop scripts */
+    .no-js-hide { display: block; }
+</style>
+
+<!-- Fallback for Disabled JS -->
+<noscript>
+    <style>.no-js-hide { display: none !important; }</style>
+    <div class="alert alert-danger text-center mt-5" role="alert">
+        <i class="fa-solid fa-triangle-exclamation"></i> <strong>JavaScript is required.</strong> Please enable JavaScript to access this secure portal.
+    </div>
+</noscript>
+
+<!-- Main Content Area Start -->
+<div class="container mt-5 mb-5 noselect no-js-hide" style="min-height: 50vh;">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            
+            <!-- Verification Search Form Card (Hides on Print) -->
+            <div class="card shadow-lg border-0 no-print mb-4">
+                <div class="card-header text-white text-center" style="background-color: #0056b3;">
+                    <h3 class="mb-0"><i class="fa-solid fa-certificate mr-2"></i> RTU Certificate Verification Portal</h3>
+                </div>
+                <div class="card-body p-4">
+                    
+                    <div class="alert alert-info text-center" style="font-size: 14px;">
+                        <i class="fa-solid fa-check-double text-success"></i> <strong>Free & Instant Verification.</strong> Verify the authenticity of RTU issued certificates.
+                    </div>
+
+                    <form action="/verify-certificate" method="POST" id="secureVerificationForm" onsubmit="return submitSecureForm(this);">
+                        
+                        <!-- CSRF Token Placeholder -->
+                        <% if (typeof csrfToken !== 'undefined') { %>
+                            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                        <% } %>
+
+                        <div class="form-group mb-4">
+                            <label for="cert_no" class="form-label font-weight-bold">Enter Certificate / Degree Number:</label>
+                            <input type="text" 
+                                   id="cert_no"
+                                   name="cert_no" 
+                                   class="form-control form-control-lg text-uppercase" 
+                                   value="<%= locals.certNo ? certNo : '' %>" 
+                                   placeholder="e.g. RTU/CERT/2026/9981" 
+                                   maxlength="30" 
+                                   pattern="^[a-zA-Z0-9\/\-]+$" 
+                                   title="Only alphanumeric characters, slashes (/), and dashes (-) are allowed"
+                                   autocomplete="off" 
+                                   spellcheck="false"
+                                   oninput="this.value = this.value.toUpperCase()"
+                                   required>
+                            <small class="form-text text-muted"><i class="fa-solid fa-circle-info"></i> Enter the exact registration/certificate number printed on the document.</small>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="btn btn-primary btn-lg w-100" style="background-color: #004085; border: none; cursor: pointer;">
+                            <span id="btnText"><i class="fa-solid fa-magnifying-glass-chart"></i> Verify Authenticity</span>
+                            <span id="btnSpinner" style="display:none;"><i class="fa-solid fa-spinner fa-spin"></i> Checking Database...</span>
+                        </button>
+                    </form>
+
+                    <!-- Error Message -->
+                    <% if (locals.error) { %>
+                        <div class="alert alert-danger mt-4 text-center font-weight-bold" role="alert" aria-live="assertive">
+                            <i class="fa-solid fa-circle-xmark" style="font-size: 20px;"></i><br>
+                            <%= error %>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+
+            <!-- Authentic Verification Data Display -->
+            <% if (locals.certificate) { %>
+                <div class="card shadow-sm border-dark watermark-container" id="verificationPrintArea">
+                    
+                    <!-- Authentic Watermark -->
+                    <img src="/assets/images/RTU-MG150-.png" alt="RTU Watermark" class="rtu-watermark">
+
+                    <div class="card-header bg-success text-white d-flex justify-content-between align-items-center no-print">
+                        <h5 class="mb-0"><i class="fa-solid fa-shield-check"></i> Verification Successful</h5>
+                        <button onclick="window.print()" class="btn btn-sm btn-light text-dark font-weight-bold" aria-label="Print Verification Report"><i class="fa-solid fa-print"></i> Print Report</button>
+                    </div>
+
+                    <div class="card-body p-5 bg-transparent">
+                        <!-- Shows only during Print -->
+                        <div class="print-only-title">RAJASTHAN TECHNICAL UNIVERSITY, KOTA</div>
+                        <div class="print-subtitle">OFFICIAL CERTIFICATE VERIFICATION REPORT</div>
+
+                        <div class="text-center mb-4 no-print">
+                            <i class="fa-solid fa-circle-check text-success" style="font-size: 50px;"></i>
+                            <h4 class="mt-2 text-success font-weight-bold">RECORD FOUND & VERIFIED</h4>
+                        </div>
+
+                        <!-- Verification Details Table (With Null Fallbacks) -->
+                        <div class="table-responsive mt-4">
+                            <table class="table table-bordered table-striped bg-transparent">
+                                <tbody>
+                                    <tr>
+                                        <th width="40%" class="bg-light">Certificate Number</th>
+                                        <td><strong style="font-size: 1.1rem; color: #004085; word-break: break-all;"><%= certificate.cert_no || 'N/A' %></strong></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="bg-light">Student Name</th>
+                                        <td><strong><%= certificate.student_name || 'N/A' %></strong></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="bg-light">Course / Program</th>
+                                        <td><%= certificate.course || 'N/A' %></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="bg-light">Issue / Passing Date</th>
+                                        <td><%= certificate.issue_date || 'N/A' %></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="bg-light align-middle">Current Status</th>
+                                        <td>
+                                            <% if(certificate.verification_status && certificate.verification_status.toUpperCase().includes('VERIFIED')) { %>
+                                                <span class="badge badge-success px-3 py-2" style="font-size: 15px;"><i class="fa-solid fa-check-circle"></i> <%= certificate.verification_status %></span>
+                                            <% } else { %>
+                                                <span class="badge badge-danger px-3 py-2" style="font-size: 15px;"><i class="fa-solid fa-times-circle"></i> <%= certificate.verification_status || 'INVALID' %></span>
+                                            <% } %>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Digital Signature & Validation Block -->
+                        <div class="row mt-5 align-items-center">
+                            <div class="col-8">
+                                <div style="border-left: 4px solid #28a745; padding-left: 15px;">
+                                    <h6 class="font-weight-bold mb-1">Authenticity Confirmation</h6>
+                                    <p class="text-muted mb-0" style="font-size: 13px;">
+                                        This verification report confirms that the above-mentioned certificate details match exactly with the official database records of Rajasthan Technical University, Kota.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Dynamic QR Code Placeholder -->
+                            <div class="col-4 text-right">
+                                <div style="border: 2px dashed #000; padding: 10px; display: inline-block; text-align: center; background-color: #fff;">
+                                    <% if (certificate.qr_code_image) { %>
+                                        <img src="<%= certificate.qr_code_image %>" alt="Dynamic QR" style="width: 60px; height: 60px;">
+                                    <% } else { %>
+                                        <i class="fa-solid fa-qrcode" style="font-size: 60px; color: #000;"></i>
+                                    <% } %>
+                                    <div style="font-size: 11px; margin-top: 5px; font-weight: bold;">E-VERIFIED</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="mt-5" style="border-color: #000;">
+                        
+                        <!-- Official Note & Indian Timestamp -->
+                        <div class="d-flex flex-column flex-md-row justify-content-between text-muted" style="font-size: 12px;">
+                            <div class="mb-2 mb-md-0">
+                                <strong>System Note:</strong> Generated by RTU Online Verification Portal.
+                            </div>
+                            <div class="text-md-right font-weight-bold" style="color: #000;">
+                                <i class="fa-solid fa-clock"></i> Timestamp:<br>
+                                <%= new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata', hour12: true, day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute:'2-digit', second:'2-digit' }) %>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            <% } %>
+
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script>
+    // 1. Loading UI State (Prevent Double Submissions)
+    function submitSecureForm(form) {
+        document.getElementById('btnText').style.display = 'none';
+        document.getElementById('btnSpinner').style.display = 'inline';
+        document.getElementById('submitBtn').disabled = true;
+        
+        setTimeout(() => { form.submit(); }, 100);
+        return false; 
+    }
+
+    // 2. Anti-Snooping Script: Disable Right Click, Text Selection, and Developer Tools
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    document.onkeydown = function(e) {
+        // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+        if (e.keyCode === 123 || 
+           (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) || 
+           (e.ctrlKey && e.keyCode === 85)) {
+            e.preventDefault();
+            return false;
+        }
+    }
+</script>
+<!-- Main Content Area End -->
+
+<!-- Footer Include Karein -->
+<%- include('partials/footer') %>

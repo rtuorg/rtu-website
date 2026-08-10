@@ -1,0 +1,1992 @@
+<%- include('partials/header') %>
+
+<script nonce="<%= typeof nonce !== 'undefined' ? nonce : '' %>" src="/assets/images/jssor.slider-22.0.15.min.js" type="text/javascript" data-library="jssor.slider" data-version="22.0.15"></script>
+<script nonce="<%= typeof nonce !== 'undefined' ? nonce : '' %>" src="/assets/images/slider_custom.js" type="text/javascript" data-library="jssor.slider" data-version="22.0.15"></script>
+<style>
+/* jssor slider bullet navigator skin 05 css */
+.jssorb05 {
+    position: absolute;
+}
+.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.jssorb05 div { background-position: -7px -7px; }
+.jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+.jssorb05 .av { background-position: -67px -7px; }
+.jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+/* jssor slider arrow navigator skin 12 css */
+.jssora12l, .jssora12r {
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 46px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.jssora12l { background-position: -16px -37px; }
+.jssora12r { background-position: -75px -37px; }
+.jssora12l:hover { background-position: -136px -37px; }
+.jssora12r:hover { background-position: -195px -37px; }
+.jssora12l.jssora12ldn { background-position: -256px -37px; }
+.jssora12r.jssora12rdn { background-position: -315px -37px; }
+.jssora12l.jssora12lds { background-position: -16px -37px; opacity: .3; pointer-events: none; }
+.jssora12r.jssora12rds { background-position: -75px -37px; opacity: .3; pointer-events: none; }
+.slddd{position: absolute; top: 0px; left: 0px;}
+.btnt{
+    background:#c45f1785;
+    color:white;
+}
+.btnt:hover{
+    background:#c45f17;
+}
+.section1 .sptb{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+</style>
+<div>
+<div id="jssor_1" class="mainsl" jssor-slider="true" style="visibility: visible; width: 1400px; height: 498.851px;">
+    <!-- Loading Screen -->
+    
+    <div style="position: absolute; top: 0px; left: 0px; width: 870px; height: 310px; transform-origin: 0px 0px; transform: scale(1.6092);"><div class="mainsl" style="visibility: visible; display: block; position: relative; top: 0px; left: 0px; overflow: visible;"><div data-u="loading" class="slddd" style="top: 0px; left: 0px; width: 870px; height: 310px; display: none;">
+        <div class="slddd" style="filter: alpha(opacity=70); opacity: 0.7; display: block; width: 100%; height: 100%;"></div>
+        <div class="slddd" style="display:block;bbackground:url('/assets/images/RTU-MG150-.png') no-repeat center center;width:100%;height:100%;"></div>
+    </div><div data-u="slides" class="slddd" style="cursor: default; width: 870px; height: 310px; overflow: hidden; z-index: 0; position: absolute;"><div style="position: absolute; z-index: 0; pointer-events: none; display: none;"></div></div><div data-u="slides" class="slddd" style="cursor: default; width: 870px; height: 310px; overflow: hidden; z-index: 0; position: absolute;"><div style="top: 0px; left: 0px; width: 870px; height: 310px; position: absolute; background-color: rgb(0, 0, 0); opacity: 0; display: none;"></div>
+    
+                         <div data-p="141.75" style="z-index: 1; top: 0px; left: 0px; width: 870px; height: 310px; position: absolute; overflow: hidden; perspective: 141.75px; transform: translate3d(870px, 0px, 0px);">
+            <img data-u="image" src="/assets/images/06092021123601-slide.jpg" border="0" style="top: 0px; left: 0px; width: 870px; height: 310px; z-index: 1; margin-top: 0px; margin-left: 0px; transform: translate3d(0px, 0px, 0px); position: absolute;">	
+            
+        <div data-u="loading" class="slddd" style="top: 0px; left: 0px; width: 870px; height: 310px; z-index: 1000; display: none;">
+        <div class="slddd" style="filter: alpha(opacity=70); opacity: 0.7; display: block; width: 100%; height: 100%;"></div>
+        <div class="slddd" style="display:block;background:url(&#39;/assets/images/RTU-MG150-.png&#39;) no-repeat center center;width:100%;height:100%;"></div>
+    </div></div>
+                         <div data-p="141.75" style="z-index: 1; top: 0px; left: 0px; width: 870px; height: 310px; position: absolute; overflow: hidden; perspective: 141.75px;">
+            <img data-u="image" src="/assets/images/06092021122041-slide.jpg" border="0" style="top: 0px; left: 0px; width: 870px; height: 310px; z-index: 1; margin-top: 0px; margin-left: 0px; transform: translate3d(0px, 0px, 0px); position: absolute;">	
+            
+        <div data-u="loading" class="slddd" style="top: 0px; left: 0px; width: 870px; height: 310px; z-index: 1000; display: none;">
+        <div class="slddd" style="filter: alpha(opacity=70); opacity: 0.7; display: block; width: 100%; height: 100%;"></div>
+        <div class="slddd" style="display:block;background:url('/assets/images/RTU-MG150-.png') no-repeat center center;width:100%;height:100%;"></div>
+    </div></div>
+               
+       
+      
+            
+            
+        </div></div></div></div>
+    <!-- Bullet Navigator -->
+    <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+        <!-- bullet navigator item prototype -->
+        <div data-u="prototype" style="width:16px;height:16px;"></div>
+    </div>
+    <!-- Arrow Navigator -->
+    <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+    <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+</div>
+
+<script nonce="<%= typeof nonce !== 'undefined' ? nonce : '' %>" type="text/javascript">jssor_1_slider_init();</script>	
+
+    <!--Section-->
+    <!--Section-->
+    <div></div>
+    <div style="padding: 5px;background-color: #c45f17e0;color: #fff;">
+        <marquee scrollamount="7" onmouseover="if (!window.__cfRLUnblockHandlers) return false; this.stop();" onmouseout="if (!window.__cfRLUnblockHandlers) return false; this.start();">
+                <ul style="list-style-type: disc;">
+                    
+                            <li>
+                                    <a style="font-weight: bolder;color:#fff; " href="https://www.rtu.org.in/index/Adminpanel/Images/Media/30072026033838-media.pdf" target="_blank" rel="noopener noreferrer">Advertisement for the Appointment to the Post of Vice-Chancellor of Bhatkhande Sanskriti Vishwavidyalaya, Lucknow, on the Websites of the Concerned Universities. <img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"> 										</a>
+                                </li>
+                                    <li>
+                                    <a style="font-weight: bolder;color:#fff; " href="https://www.rtu.org.in/index/Adminpanel/Images/Media/14072026011356-media.pdf" target="_blank" rel="noopener noreferrer">ADVERTISEMENT TO FILL UP PROJECT POSITIONS: TEAM LEADER and GEOTECH/FOUNDATION ENGINEER at AAI, KOTA. <img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"> 										</a>
+                                </li>
+                                    <li>
+                                    <a style="font-weight: bolder;color:#fff; " href="https://www.rtu.org.in/index/Recruitment%20Application%20Form.docx" target="_blank" rel="noopener noreferrer">APPLICATION FORM TO FILL UP PROJECT POSITIONS: TEAM LEADER and GEOTECH/FOUNDATION ENGINEER at AAI, KOTA. <img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"> 										</a>
+                                </li>
+                                    <li>
+                                    <a style="font-weight: bolder;color:#fff; " href="http://elink.aicte-india.org/vtrack?clientid=196766&amp;ul=VwFRVE1TTAJVAlkWWVtUUgcOWlciBhJMHFQBGVhaTBkaAA==&amp;ml=WgVRUgAfABoGUg5E&amp;sl=IU8iHngtTDV9N0tdVFFbXUwCWlcWAUtQXFELVh9bQgIaAQ==&amp;pp=0&amp;ga=utm_source%3DNet" target="_blank" rel="noopener noreferrer">AICTE scholarship/fellowship schemes <img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"> 										</a>
+                                </li>
+                                    <li>
+                                    <a style="font-weight: bolder;color:#fff; " href="https://www.rtu.org.in/index/Adminpanel/Images/Media/12122025060933-media.pdf" target="_blank" rel="noopener noreferrer">RTU guidelines for the issue of NOC for 2026-27 <img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"> 										</a>
+                                </li>
+                                                        
+                </ul>
+        </marquee>
+    </div>
+    <section class="sptb bg-white">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <!--<h2>Featured Classes</h2>-->
+                <!--<span class="sectiontitle-design"><span class="icons"></span></span>-->
+                <!--<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>-->
+            </div>
+            <div class="row" id="cardmain">
+            <div class="col-xl-9 col-lg-4 col-md-6 col-sm-12">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 customBg">
+                    <div class="card overflow-hidden">
+                        <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                        
+                        <div class="item-card2-icons" style="display:none;">
+                            <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l bg-black-trasparant"> <i class="fa-solid fa-share-nodes"></i></a>
+                            <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l text-danger"> <i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <div class="item-card2">
+                                <div class="item-card2-desc">
+                                    <div class="item-card2-text mb-3">
+                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Admission</h4></a>
+                                    </div>
+                                    <!--p class="">At vero eos et accusamus et iusto odio dignissimos ducimus </p-->
+<ul>
+                                    <li><a href="https://www.rtu.org.in/index/viewdata.php?page=Academic-Calendar1"><i class="fa-solid fa-share"></i> Academic Calendar</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/ud_admission.php"><i class="fa-solid fa-share"></i>  UD Admission</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/viewdata.php?page=CAM-2023456"><i class="fa-solid fa-share"></i>  CAM-2023</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/DAT-2025/"><i class="fa-solid fa-share"></i> RTU DAT-2025</a></li>
+                                    <li><a href="https://rtu.org.in/index/syllabusfilter.php"><i class="fa-solid fa-share"></i> Syllabus</a></li>
+                                    <!--li><a href="http://www.cegreap2020.com/"><i class="fa-solid fa-share"></i> B tech I st year</a></li>
+                                    <li><a href="https://www.reap2021.com/"><i class="fa-solid fa-share"></i> Admission Enquiry</a></li-->
+</ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 customBg">
+                    <div class="card overflow-hidden">
+                        <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                        
+                        <div class="item-card2-icons" style="display:none;">
+                            <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l bg-black-trasparant"> <i class="fa-solid fa-share-nodes"></i></a>
+                            <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l text-danger"> <i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <div class="item-card2">
+                                <div class="item-card2-desc">
+                                    <div class="item-card2-text mb-3">
+                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Application for Mark sheet/Certificate</h4></a>
+                                    </div>
+                                    <!--p class="">At vero eos et accusamus et iusto odio dignissimos ducimus </p-->
+                                    <ul>
+                                    <li><a href="https://www.rtu.org.in/index/apply_certificate.php"><i class="fa-solid fa-share"></i> Online Process</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/view_menudata.php?page=MarksheetCertificates30"><i class="fa-solid fa-share"></i>Offline Process</a></li>
+                                        <li><a href="https://www.rtu.org.in/index/apply_certificate.php"><i class="fa-solid fa-share"></i> Online Application for Various Academic Certificates</a></li>
+                            
+                                    <li style="visibility:hidden;margin-bottom: 9px;"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 customBg">
+                    <div class="card overflow-hidden">
+                        <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                        
+                        <div class="item-card2-icons" style="display:none;">
+                            <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l bg-black-trasparant"> <i class="fa-solid fa-share-nodes"></i></a>
+                            <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l text-danger"> <i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <div class="item-card2">
+                                <div class="item-card2-desc">
+                                    <div class="item-card2-text mb-3">
+                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Important Links</h4></a>
+                                    </div>
+                                    <!--p class="">At vero eos et accusamus et iusto odio dignissimos ducimus </p-->
+                                    <ul>
+                                    <li><a href="https://www.rtu.org.in/index/thought_lab.php" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-share"></i> Thought lab<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a></li>
+                                    <li><a href="https://rtu.org.in/index/viewdata.php?page=RESULT485" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-share"></i>Results Page RTU and UTD<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a></li>
+                                    <li><a href="https://samadhaan.ugc.ac.in/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-share"></i> e-Samadhan portal</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/view_menudata.php?page=List-of-Affiliated-Colleges2" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-share"></i> Affiliated Colleges</a></li>
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 customBg">
+                    <div class="card overflow-hidden">
+                        <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                        
+                        <div class="item-card2-icons" style="display:none;">
+                            <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l bg-black-trasparant"> <i class="fa-solid fa-share-nodes"></i></a>
+                            <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l text-danger"> <i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <div class="item-card2">
+                                <div class="item-card2-desc">
+                                    <div class="item-card2-text mb-3">
+                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Circulars</h4></a>
+                                    </div>
+                                    <!--p class="">At vero eos et accusamus et iusto odio dignissimos ducimus </p-->
+                                    <ul>
+                                    <li><a href="https://www.rtu.org.in/index/viewdata.php?page=RTI-Infomation121"><i class="fa-solid fa-share"></i> RTI Infomation</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/viewdata.php?page=Circulars120"><i class="fa-solid fa-share"></i> Circulars</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/viewdata.php?page=BOMACFC-Minutes-119"><i class="fa-solid fa-share"></i>  BOM/AC/FC Minutes </a></li>
+                                    <li><a href="https://www.rtu.org.in/index/viewdata.php?page=RUSA-Minutes-118"><i class="fa-solid fa-share"></i> RUSA Minutes </a></li>
+                                    <li><a href="https://www.rtu.org.in/index/download_form16.php"><i class="fa-solid fa-share"></i> Download form no. 16</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/teqip.php"><i class="fa-solid fa-share"></i> RTU(ATU) TEQIP-III</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/central_library.php" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-share"></i> Central Library</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 customBg">
+                    <div class="card overflow-hidden">
+                        <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                        
+                        <div class="item-card2-icons" style="display:none;">
+                            <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l bg-black-trasparant"> <i class="fa-solid fa-share-nodes"></i></a>
+                            <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l text-danger"> <i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <div class="item-card2">
+                                <div class="item-card2-desc">
+                                    <div class="item-card2-text mb-3">
+                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Examination</h4></a>
+                                    </div>
+                                    <!--p class="">At vero eos et accusamus et iusto odio dignissimos ducimus </p-->
+                                    <ul>
+                                    <li><a href="https://www.rtu.org.in/index/view_menudata.php?page=EXAM-CENTRES66"><i class="fa-solid fa-share"></i> Exam Centers</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/view_menudata.php?page=Time-Table29"><i class="fa-solid fa-share"></i> Time Table</a></li>
+                                    
+                                    <li><a href="https://www.rtu.org.in/index/view_menudata.php?page=Examinations64"><i class="fa-solid fa-share"></i>  Notices</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/viewdata.php?page=Copy-View-Notice116"><i class="fa-solid fa-share"></i> Copy View Notice</a></li>
+                                    
+                                        <li><a href="https://rtu.org.in/index/viewdata.php?page=RTU-XV-Convocation484"><i class="fa-solid fa-share"></i> <b>XV Convocation-2026</b><img src="/assets/images/newicon1.gif"></a></li>
+                                    <li><a href="https://rtu.org.in/index/viewdata.php?page=Mercy-Chance467"><i class="fa-solid fa-share"></i><b>Mercy Chance</b></a><img src="/assets/images/newicon1.gif"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 customBg">
+                    <div class="card overflow-hidden">
+                        <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                        
+                        <div class="item-card2-icons" style="display:none;">
+                            <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l bg-black-trasparant"> <i class="fa-solid fa-share-nodes"></i></a>
+                            <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l text-danger"> <i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div class="card-body">
+                            <div class="item-card2">
+                                <div class="item-card2-desc">
+                                    <div class="item-card2-text mb-3">
+                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Student Support Services</h4></a>
+                                    </div>
+                                    <!--p class="">At vero eos et accusamus et iusto odio dignissimos ducimus </p-->
+                                    <ul>
+                                    <li><a href="https://rtu.org.in/index/viewdata.php?page=Expert-Faculty437"><i class="fa-solid fa-share"></i><b>Expert Faculty Lecture</b></a></li>
+                                    <li><a href="https://www.rtu.org.in/index/view_menudata.php?page=-Dean-Student-Welfare115"><i class="fa-solid fa-share"></i> Dean Student Welfare</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/view_menudata.php?page=Courses-Offered14"><i class="fa-solid fa-share"></i>  Programs Offered</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/rtu_grevience.php"><i class="fa-solid fa-share"></i>   Register Complaints</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/rtu_sc_cell.php"><i class="fa-solid fa-share"></i>  RTU SC/ST/OBC Cell (Grievances)</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/student_cred.php"><i class="fa-solid fa-share"></i> Student Credentials</a></li>
+                                    <li><a href="https://www.rtu.org.in/index/placement.php"><i class="fa-solid fa-share"></i> Training &amp; Placement<img src="/assets/images/newicon1.gif"> </a></li>
+                                        <li><a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/24072023043006-media.jpg"><i class="fa-solid fa-share"></i>Mahila utpeedan samiti<img src="/assets/images/newicon1.gif"> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+            
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card overflow-hidden">
+                        <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                        
+                        <div class="item-card2-icons" style="display:none;">
+                            <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l bg-black-trasparant"> <i class="fa-solid fa-share-nodes"></i></a>
+                            <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l text-danger"> <i class="fa-solid fa-heart"></i></a>
+                        </div>
+            <div class="card-body" style="background-color: #ef95541a;">
+            <div class="item-card2">
+                <div class="item-card2-desc">
+                    <div class="item-card2-text mb-3">
+                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Recent News</h4></a>
+                    </div>
+                <div>
+<!--<h4 class="newsh1" style="
+    background: #f7bd3d;
+    padding: 7px;
+    color: white;
+border: 0px;
+border-top: 3px solid #634221 !important;
+
+">Recent News</h4>-->
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+</style>
+<div id="news-container_1373" class="news-container" style="max-width: 100%; visibility: visible; overflow: hidden; position: relative; max-height: 459px; overflow-y: scroll;">
+
+    <ul style="margin: 0px; padding: 0px; top: 0px;">
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/28072026043246-media.pdf" target="_blank" rel="noopener noreferrer">Important Advisory for the Students of Rajasthan Technical University, Kota. Precaution against fraud related to re-evaluation, back papers, increase in marks, and examination results<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/14072026011157-media.pdf" target="_blank" rel="noopener noreferrer">Industrial Consultancy Cell reconstitution<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/04072026090540-media.pdf" target="_blank" rel="noopener noreferrer">List of Conveners for various Board of Studies(BoS)<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/04072026090113-media.jpeg" target="_blank" rel="noopener noreferrer">Office order information officer<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/20062026043759-media.pdf" target="_blank" rel="noopener noreferrer">Extension of last date for students college transfer<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/20062026123655-media.jpeg" target="_blank" rel="noopener noreferrer">Department of Management Studies (MBA at UD, RTU)... Coming soon<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/02062026031136-media.pdf" target="_blank" rel="noopener noreferrer">Additional Mercy Chance, session 2025-26<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/25052026051846-media.png" target="_blank" rel="noopener noreferrer">Advertisement  for B. Tech newly admitted candidates<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/14052026035314-media.pdf" target="_blank" rel="noopener noreferrer">Admission under AICTE Post Doctoral Fellowship (PDF) Scheme<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/11052026092154-media.pdf" target="_blank" rel="noopener noreferrer">Applications invited from students for college transfer for 2026-27<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/09052026044041-media.pdf" target="_blank" rel="noopener noreferrer">AICTE (Young Achievers Scholarship and Holistic Academic Skills Venture Initiative)<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/08052026011229-media.pdf" target="_blank" rel="noopener noreferrer">MOU List<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/admission.php">RTUBBAP-2026 (BBA and BCA Admissions )<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/02042026113403-media.jpg" target="_blank" rel="noopener noreferrer">Office order <img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/10032026122638-media.jpg" target="_blank" rel="noopener noreferrer">Updates Regarding II Merit Holders<img src="/assets/images/newicon1.gif" alt="newicon" height="8" width="27"></a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                        <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/23122021124426-media.pdf" target="_blank" rel="noopener noreferrer">Circular Regarding Exam Form filling for Mercy Exam 2020-21</a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+                <li style="margin: 0px; padding: 0px;">
+            <div style="padding:10px">
+                <div class="newsscroller_title">
+                    <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/23122021124421-media.pdf" target="_blank" rel="noopener noreferrer">Notice Regarding Final Semester Special Exam and I &amp; III semester Exam 2020-21</a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div style="clear:both"></div>
+        </li>
+            </ul>
+
+</div>
+<script nonce="<%= typeof nonce !== 'undefined' ? nonce : '' %>" type="text/javascript">
+        
+                                
+                   /** var interval_5f5f42e1f399b = setInterval(function() {
+
+                    if(document.readyState === 'complete') {
+
+                       clearInterval(interval_5f5f42e1f399b);
+                        var $n = jQuery.noConflict();  
+                        $n("#news-container_1373").css('visibility','visible');
+                        $n(function(){
+                                    $n('#news-container_1373').vTicker({ 
+                                            speed: 1700,
+                                            pause: 5000,
+                                            animation: '',
+                                            mousePause: true,
+                                            height:427,
+                                            direction:'up'
+                                    });                                            
+                            });
+
+                        
+                     }    
+                }, 100);**/
+
+            </script>
+<h4 class="newsh1" style="
+    background: transparent;
+    padding: 2px;
+    color: black;
+    border: 0px;
+text-align:left;
+    border-bottom: 3px solid #634221 !important;
+    font-size: 16px;
+"><a href="https://www.rtu.org.in/index/viewdata.php?page=More131" target="_blank" rel="noopener noreferrer">More..</a></h4>
+</div>
+                </div>
+                
+                </div>
+                
+            </div>
+            </div>
+            </div>
+            
+        </div></div></section><!--/Section-->
+        
+
+        <!--Section-->
+        <section class="sptb bg-white">
+            <div class="container">
+                <div class="section-title center-block text-center">
+                    <h2>Important Links</h2>
+                    <span class="sectiontitle-design"><span class="icons"></span></span>
+                    <p>Here are important links connecting to important links of website</p>
+                </div>
+                <div class="item-all-cat center-block text-center education-categories">
+    <div class="row">
+    <!-- SVG Gradient (Screenshot jaisa color laane ke liye) -->
+    <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+        <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#4a148c" />
+            <stop offset="100%" stop-color="#c45f17" />
+        </linearGradient>
+    </svg>
+
+    <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="item-all-card text-dark text-center">
+            <a href="https://www.rtu.org.in/index/utd_home.php"></a>
+            <div class="iteam-all-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="url(#icon-gradient)" viewBox="0 0 16 16"><path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/></svg>
+            </div>
+            <div class="item-all-text mt-3">
+                <h5 class="mb-0">University Department</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="item-all-card text-dark text-center">
+            <a href="https://www.rtu.org.in/index/view_menudata.php?page=PhD-Home31"></a>
+            <div class="iteam-all-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="url(#icon-gradient)" viewBox="0 0 16 16"><path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.156 3.112.765v13.2c-.718-.58-2.013-.91-3.388-.893-1.12.014-2.26.2-3.084.45A1.5 1.5 0 0 1 0 14.15V3.5a1.5 1.5 0 0 1 1-1.415L1 2.828zM1.5 3.376V13.88c.64-.2 1.4-.3 2.17-.3 1.25 0 2.38.2 3.33.511V3.979c-.95-.31-2.08-.511-3.33-.511-.77 0-1.53.1-2.17.3zM15 2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.156-3.112.765v13.2c.718-.58 2.013-.91 3.388-.893 1.12.014 2.26.2 3.084.45A1.5 1.5 0 0 0 16 14.15V3.5a1.5 1.5 0 0 0-1-1.415l-1-.672zM14.5 3.376c-.64-.2-1.4-.3-2.17-.3-1.25 0-2.38.2-3.33.511v10.129c.95-.31 2.08-.511 3.33-.511.77 0 1.53.1 2.17.3V3.376z"/></svg>
+            </div>
+            <div class="item-all-text mt-3">
+                <h5 class="mb-0">Research</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="item-all-card text-dark text-center">
+            <a href="https://www.rtu.org.in/index/viewdata.php?page=RTI-Infomation121"></a>
+            <div class="iteam-all-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="url(#icon-gradient)" viewBox="0 0 16 16"><path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/><path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/></svg>
+            </div>
+            <div class="item-all-text mt-3">
+                <h5 class="mb-0">RTI</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="item-all-card text-dark text-center">
+            <a href="https://www.rtu.org.in/index/view_menudata.php?page=Downloads42"></a>
+            <div class="iteam-all-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="url(#icon-gradient)" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+            </div>
+            <div class="item-all-text mt-3">
+                <h5 class="mb-0">Downloads</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="item-all-card text-dark text-center">
+            <a href="https://www.rtu.org.in/index/view_menudata.php?page=Support-System110"></a>
+            <div class="iteam-all-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="url(#icon-gradient)" viewBox="0 0 16 16"><path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/></svg>
+            </div>
+            <div class="item-all-text mt-3">
+                <h5 class="mb-0">Support System</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2 col-md-4 col-sm-6">
+        <div class="item-all-card text-dark text-center">
+            <a href="https://www.rtu.org.in/index/view_menudata.php?page=Smart-Villages111"></a>
+            <div class="iteam-all-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="url(#icon-gradient)" viewBox="0 0 16 16"><path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z"/><path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 5c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 6c1.675 0 3.216.485 4.577 1.336.205.128.48.11.652-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 7c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 8c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/></svg>
+            </div>
+            <div class="item-all-text mt-3">
+                <h5 class="mb-0">Smart Villages</h5>
+            </div>
+        </div>
+    </div>
+</div>
+        </section><!--/Section-->
+        
+
+        <!--Section-->
+        <section class="section1">
+            <div class="about-1 cover-image sptb bg-background-color" data-image-src="/assets/images/banner5.jpg" style="background: url(&quot;/assets/banner5.jpg&quot;) center center;">
+                <div class="content-text mb-0 text-white info">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="counter-status md-mb-0">
+                                    <div class="counter-icon">
+                                        <i class="typcn typcn-group-outline"></i>
+                                    </div>
+                                    <h5>Affiliated Colleges</h5>
+                                    <h2 class="counter mb-0">158</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="counter-status status-1 md-mb-0">
+                                    <div class="counter-icon text-warning">
+                                        <i class="typcn typcn-mortar-board"></i>
+                                    </div>
+                                    <h5>Total Courses</h5>
+                                    <h2 class="counter mb-0">7</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="counter-status status md-mb-0">
+                                    <div class="counter-icon text-primary">
+                                        <i class="typcn typcn-globe-outline"></i>
+                                    </div>
+                                    <h5>Total Students</h5>
+                                    <h2 class="counter mb-0" style="display: inline;">1.5</h2><h2 style="display: inline;"><span class="mb-0"> lac +</span></h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="counter-status status">
+                                    <div class="counter-icon text-success">
+                                        <i class="typcn typcn-news"></i>
+                                    </div>
+                                    <h5>Total Faculties</h5>
+                                    <h2 class="counter mb-0">7253</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/Section-->
+        <section class="sptb ">
+            <div class="container">
+                <div class="section-title center-block text-center">
+                    <h2>Latest Events</h2>
+                    <span class="sectiontitle-design"><span class="icons"></span></span>
+                    <p>Stay updated with the latest events held at university</p>
+                </div>
+                <div id="myCarousel1" class="owl-carousel owl-carousel-icons2 owl-loaded owl-drag">
+                                    
+                                            
+                                            
+                                        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1201px, 0px, 0px); transition: 0.25s; width: 3303px;"><div class="owl-item cloned" style="width: 275.25px; margin-right: 25px;"><div class="item">
+                        <div class="card mb-0">
+                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                            <div class="item-card2-img">
+                                <a href="https://www.rtu.org.in/index/#"></a>
+                                <img src="/assets/images/13102020111324-event.jpg" alt="img" class="cover-image">
+                            </div>
+                            <div class="item-card2-icons" style="display:none;">
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-share-nodes"></i></a>
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-heart text-danger"></i></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-card2">
+                                    <div class="item-card2-desc">
+                                        <div class="item-card2-text mb-3">
+                                            <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Yoga Day</h4></a>
+                                        </div>
+                                        <p class="">International yoga day following COVID-19 guidelines</p>
+                                        <ul class="mb-0" style="display:none;">
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-location-pin  mr-1"></i>  Los Angles</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-event  mr-1"></i> 5 hours ago</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-user mr-1"></i> Sally Peake</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-phone  mr-1"></i> 567987087</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div><div class="owl-item cloned" style="width: 275.25px; margin-right: 25px;"><div class="item">
+                        <div class="card mb-0">
+                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                            <div class="item-card2-img">
+                                <a href="https://www.rtu.org.in/index/#"></a>
+                                <img src="/assets/images/06092021125711-event.jpg" alt="img" class="cover-image">
+                            </div>
+                            <div class="item-card2-icons" style="display:none;">
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-share-nodes"></i></a>
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-heart text-danger"></i></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-card2">
+                                    <div class="item-card2-desc">
+                                        <div class="item-card2-text mb-3">
+                                            <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Aeronautical Building Inauguration</h4></a>
+                                        </div>
+                                        <p class="">Aeronautical Building Inauguration 2021</p>
+                                        <ul class="mb-0" style="display:none;">
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-location-pin  mr-1"></i>  Los Angles</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-event  mr-1"></i> 5 hours ago</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-user mr-1"></i> Sally Peake</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-phone  mr-1"></i> 567987087</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div><div class="owl-item cloned" style="width: 275.25px; margin-right: 25px;"><div class="item">
+                        <div class="card mb-0">
+                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                            <div class="item-card2-img">
+                                <a href="https://www.rtu.org.in/index/#"></a>
+                                <img src="/assets/images/13102020111503-event.jpg" alt="img" class="cover-image">
+                            </div>
+                            <div class="item-card2-icons" style="display:none;">
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-share-nodes"></i></a>
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-heart text-danger"></i></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-card2">
+                                    <div class="item-card2-desc">
+                                        <div class="item-card2-text mb-3">
+                                            <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Infosys Pool Campus</h4></a>
+                                        </div>
+                                        <p class="">by RTU for BTech/ MTech/ MCA students March, 2019 </p>
+                                        <ul class="mb-0" style="display:none;">
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-location-pin  mr-1"></i>  Los Angles</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-event  mr-1"></i> 5 hours ago</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-user mr-1"></i> Sally Peake</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-phone  mr-1"></i> 567987087</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div><div class="owl-item cloned" style="width: 275.25px; margin-right: 25px;"><div class="item">
+                        <div class="card mb-0">
+                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                            <div class="item-card2-img">
+                                <a href="https://www.rtu.org.in/index/#"></a>
+                                <img src="/assets/images/13102020111324-event.jpg" alt="img" class="cover-image">
+                            </div>
+                            <div class="item-card2-icons" style="display:none;">
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-share-nodes"></i></a>
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-heart text-danger"></i></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-card2">
+                                    <div class="item-card2-desc">
+                                        <div class="item-card2-text mb-3">
+                                            <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Yoga Day</h4></a>
+                                        </div>
+                                        <p class="">International yoga day following COVID-19 guidelines</p>
+                                        <ul class="mb-0" style="display:none;">
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-location-pin  mr-1"></i>  Los Angles</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-event  mr-1"></i> 5 hours ago</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-user mr-1"></i> Sally Peake</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-phone  mr-1"></i> 567987087</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div><div class="owl-item active" style="width: 275.25px; margin-right: 25px;"><div class="item">
+                        <div class="card mb-0">
+                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                            <div class="item-card2-img">
+                                <a href="https://www.rtu.org.in/index/#"></a>
+                                <img src="/assets/images/06092021125711-event.jpg" alt="img" class="cover-image">
+                            </div>
+                            <div class="item-card2-icons" style="display:none;">
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-share-nodes"></i></a>
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-heart text-danger"></i></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-card2">
+                                    <div class="item-card2-desc">
+                                        <div class="item-card2-text mb-3">
+                                            <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Aeronautical Building Inauguration</h4></a>
+                                        </div>
+                                        <p class="">Aeronautical Building Inauguration 2021</p>
+                                        <ul class="mb-0" style="display:none;">
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-location-pin  mr-1"></i>  Los Angles</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-event  mr-1"></i> 5 hours ago</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-user mr-1"></i> Sally Peake</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-phone  mr-1"></i> 567987087</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div><div class="owl-item active" style="width: 275.25px; margin-right: 25px;"><div class="item">
+                        <div class="card mb-0">
+                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                            <div class="item-card2-img">
+                                <a href="https://www.rtu.org.in/index/#"></a>
+                                <img src="/assets/images/13102020111503-event.jpg" alt="img" class="cover-image">
+                            </div>
+                            <div class="item-card2-icons" style="display:none;">
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-share-nodes"></i></a>
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-heart text-danger"></i></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-card2">
+                                    <div class="item-card2-desc">
+                                        <div class="item-card2-text mb-3">
+                                            <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Infosys Pool Campus</h4></a>
+                                        </div>
+                                        <p class="">by RTU for BTech/ MTech/ MCA students March, 2019 </p>
+                                        <ul class="mb-0" style="display:none;">
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-location-pin  mr-1"></i>  Los Angles</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-event  mr-1"></i> 5 hours ago</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-user mr-1"></i> Sally Peake</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-phone  mr-1"></i> 567987087</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div><div class="owl-item active" style="width: 275.25px; margin-right: 25px;"><div class="item">
+                        <div class="card mb-0">
+                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                            <div class="item-card2-img">
+                                <a href="https://www.rtu.org.in/index/#"></a>
+                                <img src="/assets/images/13102020111324-event.jpg" alt="img" class="cover-image">
+                            </div>
+                            <div class="item-card2-icons" style="display:none;">
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-share-nodes"></i></a>
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-heart text-danger"></i></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-card2">
+                                    <div class="item-card2-desc">
+                                        <div class="item-card2-text mb-3">
+                                            <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Yoga Day</h4></a>
+                                        </div>
+                                        <p class="">International yoga day following COVID-19 guidelines</p>
+                                        <ul class="mb-0" style="display:none;">
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-location-pin  mr-1"></i>  Los Angles</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-event  mr-1"></i> 5 hours ago</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-user mr-1"></i> Sally Peake</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-phone  mr-1"></i> 567987087</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div><div class="owl-item cloned active" style="width: 275.25px; margin-right: 25px;"><div class="item">
+                        <div class="card mb-0">
+                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                            <div class="item-card2-img">
+                                <a href="https://www.rtu.org.in/index/#"></a>
+                                <img src="/assets/images/06092021125711-event.jpg" alt="img" class="cover-image">
+                            </div>
+                            <div class="item-card2-icons" style="display:none;">
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-share-nodes"></i></a>
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-heart text-danger"></i></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-card2">
+                                    <div class="item-card2-desc">
+                                        <div class="item-card2-text mb-3">
+                                            <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Aeronautical Building Inauguration</h4></a>
+                                        </div>
+                                        <p class="">Aeronautical Building Inauguration 2021</p>
+                                        <ul class="mb-0" style="display:none;">
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-location-pin  mr-1"></i>  Los Angles</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-event  mr-1"></i> 5 hours ago</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-user mr-1"></i> Sally Peake</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-phone  mr-1"></i> 567987087</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div><div class="owl-item cloned" style="width: 275.25px; margin-right: 25px;"><div class="item">
+                        <div class="card mb-0">
+                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                            <div class="item-card2-img">
+                                <a href="https://www.rtu.org.in/index/#"></a>
+                                <img src="/assets/images/13102020111503-event.jpg" alt="img" class="cover-image">
+                            </div>
+                            <div class="item-card2-icons" style="display:none;">
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-share-nodes"></i></a>
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-heart text-danger"></i></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-card2">
+                                    <div class="item-card2-desc">
+                                        <div class="item-card2-text mb-3">
+                                            <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Infosys Pool Campus</h4></a>
+                                        </div>
+                                        <p class="">by RTU for BTech/ MTech/ MCA students March, 2019 </p>
+                                        <ul class="mb-0" style="display:none;">
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-location-pin  mr-1"></i>  Los Angles</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-event  mr-1"></i> 5 hours ago</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-user mr-1"></i> Sally Peake</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-phone  mr-1"></i> 567987087</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div><div class="owl-item cloned" style="width: 275.25px; margin-right: 25px;"><div class="item">
+                        <div class="card mb-0">
+                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                            <div class="item-card2-img">
+                                <a href="https://www.rtu.org.in/index/#"></a>
+                                <img src="/assets/images/13102020111324-event.jpg" alt="img" class="cover-image">
+                            </div>
+                            <div class="item-card2-icons" style="display:none;">
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-share-nodes"></i></a>
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-heart text-danger"></i></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-card2">
+                                    <div class="item-card2-desc">
+                                        <div class="item-card2-text mb-3">
+                                            <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Yoga Day</h4></a>
+                                        </div>
+                                        <p class="">International yoga day following COVID-19 guidelines</p>
+                                        <ul class="mb-0" style="display:none;">
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-location-pin  mr-1"></i>  Los Angles</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-event  mr-1"></i> 5 hours ago</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-user mr-1"></i> Sally Peake</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-phone  mr-1"></i> 567987087</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div><div class="owl-item cloned" style="width: 275.25px; margin-right: 25px;"><div class="item">
+                        <div class="card mb-0">
+                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                            <div class="item-card2-img">
+                                <a href="https://www.rtu.org.in/index/#"></a>
+                                <img src="/assets/images/06092021125711-event.jpg" alt="img" class="cover-image">
+                            </div>
+                            <div class="item-card2-icons" style="display:none;">
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-share-nodes"></i></a>
+                                <a href="https://www.rtu.org.in/index/#" class="item-card2-icons-l"> <i class="fa-solid fa-heart text-danger"></i></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="item-card2">
+                                    <div class="item-card2-desc">
+                                        <div class="item-card2-text mb-3">
+                                            <a href="https://www.rtu.org.in/index/#" class="text-dark"><h4 class="mb-2">Aeronautical Building Inauguration</h4></a>
+                                        </div>
+                                        <p class="">Aeronautical Building Inauguration 2021</p>
+                                        <ul class="mb-0" style="display:none;">
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-location-pin  mr-1"></i>  Los Angles</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-event  mr-1"></i> 5 hours ago</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-user mr-1"></i> Sally Peake</a></li>
+                                            <li><a href="https://www.rtu.org.in/index/#" class="icons"><i class="icon icon-phone  mr-1"></i> 567987087</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+            </div>
+        </section><!--/Section-->
+        
+        <section class="sptb" style="display : none">
+            <div class="container">
+                <div class="section-title center-block text-center">
+                    <h2>Coming Up Classes</h2>
+                    <span class="sectiontitle-design"><span class="icons"></span></span>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="">
+                        <div class="tabs-menu ">
+                            <!-- Tabs -->
+                            <ul class="nav panel-tabs eductaional-tabs mb-6">
+                                <li class=""><a href="https://www.rtu.org.in/index/#tab1" class="active show" data-toggle="tab">All</a></li>
+                                <li><a href="https://www.rtu.org.in/index/#tab2" data-toggle="tab" class="">Short Term Courses</a></li>
+                                <li><a href="https://www.rtu.org.in/index/#tab3" data-toggle="tab" class="">Long Term Courses</a></li>
+                                <li><a href="https://www.rtu.org.in/index/#tab4" data-toggle="tab" class="">Online Courses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="tab-content">
+                            <div class="tab-pane active show" id="tab1">
+                                <div class="row">
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card overflow-hidden">
+                                            <div class="ribbon ribbon-top-left text-danger"><span class="bg-danger">Free</span></div>
+                                            <div class="item-card7-img">
+                                                <div class="item-card7-imgs">
+                                                    <a href="https://www.rtu.org.in/index/#"></a>
+                                                    <img src="/assets/images/12.jpg" alt="img" class="cover-image">
+                                                </div>
+                                                <div class="item-card7-overlaytext">
+                                                    <a href="https://www.rtu.org.in/index/#" class="text-white"> Marketing</a>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="item-card7-desc">
+                                                    <div class="item-card7-text">
+                                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h3 class="font-weight-semibold">Digital Marketing</h3></a>
+                                                    </div>
+                                                    <ul class="d-flex mb-2">
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-location-pin  mr-1"></i> USA</a></li>
+                                                        <li><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-event  mr-1"></i>1 min ago</a></li>
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-phone  mr-1"></i> 14 675 65</a></li>
+                                                    </ul>
+                                                    <p class="mb-0">Nemo enim ipsam voluptatem voluptas sit aspernatur ratione voluptatem sequi nesciunt..</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-4 pl-5">
+                                                <a class="mr-4"><span class="font-weight-bold">Duration :</span> <span class="text-muted">6 Months</span></a>
+                                                <a class="mr-4 float-right"><span class="font-weight-bold">Daily :</span><span class="text-muted"> 2 Hours </span></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-block">Join Free</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card overflow-hidden">
+                                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                                            <div class="item-card7-img">
+                                                <div class="item-card7-imgs">
+                                                    <a href="https://www.rtu.org.in/index/#"></a>
+                                                    <img src="/assets/images/6.jpg" alt="img" class="cover-image">
+                                                </div>
+                                                <div class="item-card7-overlaytext">
+                                                    <a href="https://www.rtu.org.in/index/#" class="text-white"> IT</a>
+                                                    <h4 class="mb-0">$752.99</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="item-card7-desc">
+                                                    <div class="item-card7-text">
+                                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h3 class="font-weight-semibold"> Coding Training Classes</h3></a>
+                                                    </div>
+                                                    <ul class="d-flex mb-2">
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-location-pin  mr-1"></i> London</a></li>
+                                                        <li><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-event  mr-1"></i>10 mins ago</a></li>
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-phone  mr-1"></i> 14 675 65</a></li>
+                                                    </ul>
+                                                    <p class="mb-0">Nemo enim ipsam voluptatem voluptas sit aspernatur ratione voluptatem sequi nesciunt..</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-4 pl-5">
+                                                <a class="mr-4"><span class="font-weight-bold">Duration :</span><span class="text-muted">9 Months</span></a>
+                                                <a class="mr-4 float-right"><span class="font-weight-bold">Daily :</span><span class="text-muted"> 1 Hour</span></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-block">Join Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card overflow-hidden">
+                                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                                            <div class="item-card7-img">
+                                                <div class="item-card7-imgs">
+                                                    <a href="https://www.rtu.org.in/index/#"></a>
+                                                    <img src="/assets/images/5.jpg" alt="img" class="cover-image">
+                                                </div>
+                                                <div class="item-card7-overlaytext">
+                                                    <a href="https://www.rtu.org.in/index/#" class="text-white"> Degree</a>
+                                                    <h4 class="font-weight-semibold mb-0">$635.45</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="item-card7-desc">
+                                                    <div class="item-card7-text">
+                                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h3 class="font-weight-semibold">Guitar Classes</h3></a>
+                                                    </div>
+                                                    <ul class="d-flex mb-2">
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-location-pin  mr-1"></i>Canada</a></li>
+                                                        <li><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-event  mr-1"></i>15 mins ago</a></li>
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-phone  mr-1"></i> 14 675 65</a></li>
+                                                    </ul>
+                                                    <p class="mb-0">Nemo enim ipsam voluptatem voluptas sit aspernatur ratione voluptatem sequi nesciunt..</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-4 pl-5">
+                                                <a class="mr-4"><span class="font-weight-bold">Duration :</span> <span class="text-muted">3 Months</span></a>
+                                                <a class="mr-4 float-right"><span class="font-weight-bold">Daily :</span> <span class="text-muted">3 Hour</span></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-block">Join Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card overflow-hidden mb-xl-0">
+                                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                                            <div class="item-card7-img">
+                                                <div class="item-card7-imgs">
+                                                    <a href="https://www.rtu.org.in/index/#"></a>
+                                                    <img src="/assets/images/7.jpg" alt="img" class="cover-image">
+                                                </div>
+                                                <div class="item-card7-overlaytext">
+                                                    <a href="https://www.rtu.org.in/index/#" class="text-white"> Literature</a>
+                                                    <h4 class="font-weight-semibold mb-0">$835.99</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="item-card7-desc">
+                                                    <div class="item-card7-text">
+                                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h3 class="font-weight-semibold">Free Literature Classes</h3></a>
+                                                    </div>
+                                                    <ul class="d-flex mb-2">
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-location-pin  mr-1"></i> London</a></li>
+                                                        <li><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-event  mr-1"></i>10 mins ago</a></li>
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-phone  mr-1"></i> 14 675 65</a></li>
+                                                    </ul>
+                                                    <p class="mb-0">Nemo enim ipsam voluptatem voluptas sit aspernatur ratione voluptatem sequi nesciunt..</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-4 pl-5">
+                                                <a class="mr-4"><span class="font-weight-bold">Duration :</span><span class="text-muted"> 2 Months </span></a>
+                                                <a class="mr-4 float-right"><span class="font-weight-bold">Daily :</span><span class="text-muted"> 2 Hours</span></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-block">Join Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card mb-md-0">
+                                            <div class="item-card7-img">
+                                                <div class="item-card7-imgs">
+                                                    <a href="https://www.rtu.org.in/index/#"></a>
+                                                    <img src="/assets/images/8.jpg" alt="img" class="cover-image">
+                                                </div>
+                                                <div class="item-card7-overlaytext">
+                                                    <a href="https://www.rtu.org.in/index/#" class="text-white">Photoshop</a>
+                                                    <h4 class="font-weight-semibold mb-0">$893.99</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="item-card7-desc">
+                                                    <div class="item-card7-text">
+                                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h3 class="font-weight-semibold">PhotoShop Designing</h3></a>
+                                                    </div>
+                                                    <ul class="d-flex mb-2">
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-location-pin  mr-1"></i> USA</a></li>
+                                                        <li><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-event  mr-1"></i>1 hour ago</a></li>
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-phone  mr-1"></i> 14 675 65</a></li>
+                                                    </ul>
+                                                    <p class="mb-0">Nemo enim ipsam voluptatem voluptas sit aspernatur ratione voluptatem sequi nesciunt..</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-4 pl-5">
+                                                <a class="mr-4"><span class="font-weight-bold">Duration :</span><span class="text-muted"> 3 Months</span></a>
+                                                <a class="mr-4 float-right"><span class="font-weight-bold">Daily :</span><span class="text-muted"> 8 Hours</span></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-block">Join Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card mb-0">
+                                            <div class="item-card7-img">
+                                                <div class="item-card7-imgs">
+                                                    <a href="https://www.rtu.org.in/index/#"></a>
+                                                    <img src="/assets/images/9.jpg" alt="img" class="cover-image">
+                                                </div>
+                                                <div class="item-card7-overlaytext">
+                                                    <a href="https://www.rtu.org.in/index/#" class="text-white">Networking</a>
+                                                    <h4 class="font-weight-semibold mb-0">$836.50</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="item-card7-desc">
+                                                    <div class="item-card7-text">
+                                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h3 class="font-weight-semibold">Networking classes</h3></a>
+                                                    </div>
+                                                    <ul class="d-flex mb-2">
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-location-pin  mr-1"></i>India</a></li>
+                                                        <li><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-event  mr-1"></i>15 mins ago</a></li>
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-phone  mr-1"></i> 14 675 65</a></li>
+                                                    </ul>
+                                                    <p class="mb-0">Nemo enim ipsam voluptatem voluptas sit aspernatur ratione voluptatem sequi nesciunt..</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-4 pl-5">
+                                                <a class="mr-4"><span class="font-weight-bold">Duration :</span> <span class="text-muted"> 6 Months</span></a>
+                                                <a class="mr-4 float-right"><span class="font-weight-bold">Daily :</span> <span class="text-muted">3 Hours</span></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-block"><span class="">Join Now</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab2">
+                                <div class="row">
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card overflow-hidden mb-xl-0">
+                                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                                            <div class="item-card7-img">
+                                                <div class="item-card7-imgs">
+                                                    <a href="https://www.rtu.org.in/index/#"></a>
+                                                    <img src="/assets/images/7.jpg" alt="img" class="cover-image">
+                                                </div>
+                                                <div class="item-card7-overlaytext">
+                                                    <a href="https://www.rtu.org.in/index/#" class="text-white"> Literature</a>
+                                                    <h4 class="font-weight-semibold mb-0">$635.99</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="item-card7-desc">
+                                                    <div class="item-card7-text">
+                                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h3 class="font-weight-semibold">Free Literature Classes</h3></a>
+                                                    </div>
+                                                    <ul class="d-flex mb-2">
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-location-pin  mr-1"></i> London</a></li>
+                                                        <li><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-event  mr-1"></i>10 mins ago</a></li>
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-phone  mr-1"></i> 14 675 65</a></li>
+                                                    </ul>
+                                                    <p class="mb-0">Nemo enim ipsam voluptatem voluptas sit aspernatur ratione voluptatem sequi nesciunt..</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-4 pl-5">
+                                                <a class="mr-4"><span class="font-weight-bold">Duration :</span> <span class="text-muted">3 Months</span></a>
+                                                <a class="mr-4 float-right"><span class="font-weight-bold">Daily :</span><span class="text-muted"> 3 Hour</span></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-block">Join Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card overflow-hidden mb-md-0">
+                                            <div class="item-card7-img">
+                                                <div class="item-card7-imgs">
+                                                    <a href="https://www.rtu.org.in/index/#"></a>
+                                                    <img src="/assets/images/8.jpg" alt="img" class="cover-image">
+                                                </div>
+                                                <div class="item-card7-overlaytext">
+                                                    <a href="https://www.rtu.org.in/index/#" class="text-white"> Photoshop</a>
+                                                    <h4 class="font-weight-semibold mb-0">$831.55</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="item-card7-desc">
+                                                    <div class="item-card7-text">
+                                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h3 class="font-weight-semibold">PhotoShop Designing</h3></a>
+                                                    </div>
+                                                    <ul class="d-flex mb-2">
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-location-pin  mr-1"></i> USA</a></li>
+                                                        <li><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-event  mr-1"></i>1 hour ago</a></li>
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-phone  mr-1"></i> 14 675 65</a></li>
+                                                    </ul>
+                                                    <p class="mb-0">Nemo enim ipsam voluptatem voluptas sit aspernatur ratione voluptatem sequi nesciunt..</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-4 pl-5">
+                                                <a class="mr-4"><span class="font-weight-bold">Duration :</span><span class="text-muted"> 2 Months</span></a>
+                                                <a class="mr-4 float-right"><span class="font-weight-bold">Daily :</span><span class="text-muted"> 2 Hours</span></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-block">Join Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card mb-0">
+                                            <div class="item-card7-img">
+                                                <div class="item-card7-imgs">
+                                                    <a href="https://www.rtu.org.in/index/#"></a>
+                                                    <img src="/assets/images/9.jpg" alt="img" class="cover-image">
+                                                </div>
+                                                <div class="item-card7-overlaytext">
+                                                    <a href="https://www.rtu.org.in/index/#" class="text-white">Networking</a>
+                                                    <h4 class="font-weight-semibold mb-0">$897.99</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="item-card7-desc">
+                                                    <div class="item-card7-text">
+                                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h3 class="font-weight-semibold">Networking classes</h3></a>
+                                                    </div>
+                                                    <ul class="d-flex mb-2">
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-location-pin  mr-1"></i>India</a></li>
+                                                        <li><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-event  mr-1"></i>15 mins ago</a></li>
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-phone  mr-1"></i> 14 675 65</a></li>
+                                                    </ul>
+                                                    <p class="mb-0">Nemo enim ipsam voluptatem voluptas sit aspernatur ratione voluptatem sequi nesciunt..</p>
+
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-4 pl-5">
+                                                <a class="mr-4"><span class="font-weight-bold">Duration :</span> <span class="text-muted">3 Months</span></a>
+                                                <a class="mr-4 float-right"><span class="font-weight-bold">Daily :</span> <span class="text-muted">8 Hours</span></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-block">Join Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab3">
+                                <div class="row">
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card overflow-hidden mb-xl-0">
+                                            <div class="ribbon ribbon-top-left text-danger"><span class="bg-danger">Free</span></div>
+                                            <div class="item-card7-img">
+                                                <div class="item-card7-imgs">
+                                                    <a href="https://www.rtu.org.in/index/#"></a>
+                                                    <img src="/assets/images/12.jpg" alt="img" class="cover-image">
+                                                </div>
+                                                <div class="item-card7-overlaytext">
+                                                    <a href="https://www.rtu.org.in/index/#" class="text-white"> Marketing</a>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="item-card7-desc">
+                                                    <div class="item-card7-text">
+                                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h3 class="font-weight-semibold"> Digital Marketing</h3></a>
+                                                    </div>
+                                                    <ul class="d-flex mb-2">
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-location-pin  mr-1"></i> USA</a></li>
+                                                        <li><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-event  mr-1"></i>1 min ago</a></li>
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-phone  mr-1"></i> 14 675 65</a></li>
+                                                    </ul>
+                                                    <p class="mb-0">Nemo enim ipsam voluptatem voluptas sit aspernatur ratione voluptatem sequi nesciunt..</p>
+
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-4 pl-5">
+                                                <a class="mr-4"><span class="font-weight-bold">Duration :</span> <span class="text-muted">6 Months</span></a>
+                                                <a class="mr-4 float-right"><span class="font-weight-bold">Daily :</span> <span class="text-muted">2 Hours</span></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-block">Join Free</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card overflow-hidden mb-md-0">
+                                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                                            <div class="item-card7-img">
+                                                <div class="item-card7-imgs">
+                                                    <a href="https://www.rtu.org.in/index/#"></a>
+                                                    <img src="/assets/images/6.jpg" alt="img" class="cover-image">
+                                                </div>
+                                                <div class="item-card7-overlaytext">
+                                                    <a href="https://www.rtu.org.in/index/#" class="text-white"> IT</a>
+                                                    <h4 class="font-weight-semibold mb-0">$635</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="item-card7-desc">
+                                                    <div class="item-card7-text">
+                                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h3 class="font-weight-semibold">  Coding Training Classes</h3></a>
+                                                    </div>
+                                                    <ul class="d-flex mb-2">
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-location-pin  mr-1"></i> London</a></li>
+                                                        <li><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-event  mr-1"></i>10 mins ago</a></li>
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-phone  mr-1"></i> 14 675 65</a></li>
+                                                    </ul>
+                                                    <p class="mb-0">Nemo enim ipsam voluptatem voluptas sit aspernatur ratione voluptatem sequi nesciunt..</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-4 pl-5">
+                                                <a class="mr-4"><span class="font-weight-bold">Duration :</span><span class="text-muted"> 9 Months</span></a>
+                                                <a class="mr-4 float-right"><span class="font-weight-bold">Daily :</span><span class="text-muted"> 1 Hour</span></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-block">Join Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card mb-0">
+                                            <div class="item-card7-img">
+                                                <div class="item-card7-imgs">
+                                                    <a href="https://www.rtu.org.in/index/#"></a>
+                                                    <img src="/assets/images/5.jpg" alt="img" class="cover-image">
+                                                </div>
+                                                <div class="item-card7-overlaytext">
+                                                    <a href="https://www.rtu.org.in/index/#" class="text-white">Degree</a>
+                                                    <h4 class="font-weight-semibold mb-0">$836</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="item-card7-desc">
+                                                    <div class="item-card7-text">
+                                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h3 class="font-weight-semibold">Guitar Classes</h3></a>
+                                                    </div>
+                                                    <ul class="d-flex mb-2">
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-location-pin  mr-1"></i>Canada</a></li>
+                                                        <li><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-event  mr-1"></i>15 mins ago</a></li>
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-phone  mr-1"></i> 14 675 65</a></li>
+                                                    </ul>
+                                                    <p class="mb-0">Nemo enim ipsam voluptatem voluptas sit aspernatur ratione voluptatem sequi nesciunt..</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-4 pl-5">
+                                                <a class="mr-4"><span class="font-weight-bold">Duration :</span><span class="text-muted"> 6 Months</span></a>
+                                                <a class="mr-4 float-right"><span class="font-weight-bold">Daily :</span> <span class="text-muted">3 Hours</span></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-block">Join Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab4">
+                                <div class="row">
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="card overflow-hidden mb-0">
+                                            <div class="power-ribbon power-ribbon-top-left text-warning"><span class="bg-warning"><i class="fa-solid fa-bolt"></i></span></div>
+                                            <div class="item-card7-img">
+                                                <div class="item-card7-imgs">
+                                                    <a href="https://www.rtu.org.in/index/#"></a>
+                                                    <img src="/assets/images/10.jpg" alt="img" class="cover-image">
+                                                </div>
+                                                <div class="item-card7-overlaytext">
+                                                    <a href="https://www.rtu.org.in/index/#" class="text-white"> App Developer</a>
+                                                    <h4 class="font-weight-semibold mb-0">$63</h4>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="item-card7-desc">
+                                                    <div class="item-card7-text">
+                                                        <a href="https://www.rtu.org.in/index/#" class="text-dark"><h3 class="font-weight-semibold">App Development Classes</h3></a>
+                                                    </div>
+                                                    <ul class="d-flex mb-2">
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-location-pin  mr-1"></i> London</a></li>
+                                                        <li><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-event  mr-1"></i>10 mins ago</a></li>
+                                                        <li class=""><a href="https://www.rtu.org.in/index/#" class="icons text-muted"><i class="icon icon-phone  mr-1"></i> 14 675 65</a></li>
+                                                    </ul>
+                                                    <p class="mb-0">Nemo enim ipsam voluptatem voluptas sit aspernatur ratione voluptatem sequi nesciunt..</p>
+
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-4 pl-5">
+                                                <a class="mr-4"><span class="font-weight-bold">Duration :</span> <span class="text-muted">3 Months</span></a>
+                                                <a class="mr-4 float-right"><span class="font-weight-bold">Daily :</span> <span class="text-muted">3 Hour</span></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-block">Join Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--/Section-->
+
+        <!--Section-->
+        <section>
+            <div class="cover-image sptb bg-background-color text-white" data-image-src="/assets/images/banner3.jpg" style="background: url(&quot;/assets/banner3.jpg&quot;) center center;">
+                <div class="content-text mb-0">
+                    <div class="container">
+                        <div class="section-title center-block text-center">
+                            <h2>Welcome to Rajasthan Technical University</h2>
+                            <!--<span class="sectiontitle-design"><span class="icons"></span></span>-->
+                            <p class="text-white-50">University currently affiliates about 68 Engineering Colleges, 03 B.Arch, 16 MCA Colleges, 39 MBA Colleges, 31 M.Tech Colleges, 01 M.Arch and 01 Hotel Management and Catering Institute</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="widgets-cards mb-5">
+                                            <div class="d-flex">
+                                                <div class="widgets-cards-icons">
+                                                    <div class="wrp counter-icon1 mr-5">
+                                                        <i class="fe fe-home"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="widgets-cards-data">
+                                                    <div class="text-wrapper">
+                                                        <h4><a href="https://www.rtu.org.in/index/#" class="text-white fs-25">Rajasthan Technical University</a></h4>
+                                                        <p class="text-white mt-2 mb-0">RTU was established in 2006 by the Government of Rajasthan to enhance the technical education in the state.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="widgets-cards mb-5">
+                                            <div class="d-flex">
+                                                <div class="widgets-cards-icons">
+                                                    <div class="wrp counter-icon1 mr-5">
+                                                        <i class="fe fe-eye"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="widgets-cards-data">
+                                                    <div class="text-wrapper">
+                                                        <h4><a href="https://www.rtu.org.in/index/#" class="text-white fs-25">Our Vision</a></h4>
+                                                        <p class="text-white mt-2 mb-0">To achieve academic excellence in Engineering by imparting in depth knowledge to the students,facilitating research activities and
+cater to the ever changing industrial demands, global and societal needs.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="widgets-cards">
+                                            <div class="d-flex">
+                                                <div class="widgets-cards-icons">
+                                                    <div class="wrp counter-icon1 mr-5">
+                                                        <i class="fe fe-book-open"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="widgets-cards-data">
+                                                    <div class="text-wrapper">
+                                                        <h4><a href="https://www.rtu.org.in/index/#" class="text-white fs-25">Our Mission</a></h4>
+                                                        <p class="text-white mt-2 mb-0">To provide quality engineering education to the students.</p>
+                                                            <p class="text-white mt-2 mb-0">To offer state of arts education in engineering.</p>
+                                                            <p class="text-white mt-2 mb-0">To establish industry institute interaction to make students ready for the industrial environment.</p>
+                                                            <p class="text-white mt-2 mb-0">To promote research based projects/activities to develop department as Center of Excellence for Research.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mrt-sm-2">
+                                <div class="clients-img ">
+                                    <img src="/assets/images/13102020111324-event.jpg" alt="img" class="bg-white br-3 p-1">
+                                    <img src="/assets/images/13102020111503-event.jpg" alt="img" class="bg-white br-3 p-1">
+                                    <img src="/assets/images/06092021125711-event.jpg" alt="img" class="bg-white br-3 p-1">
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--/Section-->
+
+        <!--Section-->
+        <section class="sptb bg-white">
+            <div class="container">
+                <div class="section-title center-block text-center">
+                    <h2>Direct Links</h2>
+                    <span class="sectiontitle-design"><span class="icons"></span></span>
+                    <p>Here are direct links to various important sites just a click away</p>
+                </div>
+                <div id="small-categories" class="owl-carousel client-carousel owl-loaded owl-drag">
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1681px, 0px, 0px); transition: 0.25s; width: 5525px;"><div class="owl-item cloned" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://ndl.iitkgp.ac.in/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/12102020014353-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item cloned" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://www.rtu.org.in/index/viewdata.php?page=NAD161"><img src="/assets/images/12102020014343-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item cloned" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://www.rtu.org.in/index/viewdata.php?page=MOOC162"><img src="/assets/images/12102020014336-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item cloned" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://www.coursera.org/coronavirus/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/12102020014329-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item cloned" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://www.rtu.org.in/index/viewdata.php?page=MOOC162"><img src="/assets/images/12102020014320-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item cloned" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/15102020045233-media.pdf" target="_blank" rel="noopener noreferrer"><img src="/assets/images/12102020014312-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://play.google.com/store/apps/details?id=co.in.rtumis.exam&amp;hl=en" target="_blank" rel="noopener noreferrer"><img src="/assets/images/15102020044601-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item active" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://www.rtu.org.in/index/viewdata.php?page=Corrections67"><img src="/assets/images/15102020044551-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item active" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://nptel.ac.in/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/15102020044542-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item active" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://swayam.gov.in/explorer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/13102020103646-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item active" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="http://epgp.inflibnet.ac.in/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/12102020014400-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item active" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://ndl.iitkgp.ac.in/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/12102020014353-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://www.rtu.org.in/index/viewdata.php?page=NAD161"><img src="/assets/images/12102020014343-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://www.rtu.org.in/index/viewdata.php?page=MOOC162"><img src="/assets/images/12102020014336-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://www.coursera.org/coronavirus/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/12102020014329-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://www.rtu.org.in/index/viewdata.php?page=MOOC162"><img src="/assets/images/12102020014320-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://www.rtu.org.in/index/Adminpanel/Images/Media/15102020045233-media.pdf" target="_blank" rel="noopener noreferrer"><img src="/assets/images/12102020014312-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item cloned" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://play.google.com/store/apps/details?id=co.in.rtumis.exam&amp;hl=en" target="_blank" rel="noopener noreferrer"><img src="/assets/images/15102020044601-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item cloned" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://www.rtu.org.in/index/viewdata.php?page=Corrections67"><img src="/assets/images/15102020044551-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item cloned" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://nptel.ac.in/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/15102020044542-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item cloned" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://swayam.gov.in/explorer" target="_blank" rel="noopener noreferrer"><img src="/assets/images/13102020103646-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item cloned" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="http://epgp.inflibnet.ac.in/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/12102020014400-links.jpg" alt="img"></a>
+                        </div></div><div class="owl-item cloned" style="width: 215.2px; margin-right: 25px;"><div class="client-img">
+                            <a href="https://ndl.iitkgp.ac.in/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/12102020014353-links.jpg" alt="img"></a>
+                        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+        </div></section><!--/Section-->
+
+        <!--Section-->
+        <section class="sptb">
+            <div class="container">
+                <div class="section-title center-block text-center">
+                    <h2>College Gallery</h2>
+                    <span class="sectiontitle-design"><span class="icons"></span></span>
+                    <p>Collection of images and videos all together</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="row">
+                                                    <div class="col-sm-12 col-lg-3 col-md-3 ">
+                            <a href="https://www.rtu.org.in/index/gallery.php?page=2">
+                                <div class="item-card overflow-hidden">
+                                    <div class="item-card-desc">
+                                        <div class="card text-center overflow-hidden">
+                                            <div class="card-img">
+                                                <img src="/assets/images/06092021034730-glimpse.jpg" alt="img" class="cover-image">
+                                            </div>
+                                            <div class="item-tags">
+                                                <div class="bg-primary tag-option"><i class="fa-solid fa-hand-pointer mr-1"></i> View More </div>
+                                            </div>
+                                            <div class="item-card-text">
+                                                <h4 class="">21</h4>
+                                                <span><i class="fa-solid fa-building-columns mr-1 text-primary"></i>Infrastructure</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></a>
+                            </div>
+                            
+                                                        <div class="col-sm-12 col-lg-3 col-md-3 ">
+                            <a href="https://www.rtu.org.in/index/gallery.php?page=3">
+                                <div class="item-card overflow-hidden">
+                                    <div class="item-card-desc">
+                                        <div class="card text-center overflow-hidden">
+                                            <div class="card-img">
+                                                <img src="/assets/images/04112022034204-glimpse.jpg" alt="img" class="cover-image">
+                                            </div>
+                                            <div class="item-tags">
+                                                <div class="bg-primary tag-option"><i class="fa-solid fa-hand-pointer mr-1"></i> View More </div>
+                                            </div>
+                                            <div class="item-card-text">
+                                                <h4 class="">32</h4>
+                                                <span><i class="fa-solid fa-building-columns mr-1 text-primary"></i>Press Release</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></a>
+                            </div>
+                            
+                                                        <div class="col-sm-12 col-lg-3 col-md-3 ">
+                            <a href="https://www.rtu.org.in/index/gallery.php?page=4">
+                                <div class="item-card overflow-hidden">
+                                    <div class="item-card-desc">
+                                        <div class="card text-center overflow-hidden">
+                                            <div class="card-img">
+                                                <img src="/assets/images/04112022034247-glimpse.jpg" alt="img" class="cover-image">
+                                            </div>
+                                            <div class="item-tags">
+                                                <div class="bg-primary tag-option"><i class="fa-solid fa-hand-pointer mr-1"></i> View More </div>
+                                            </div>
+                                            <div class="item-card-text">
+                                                <h4 class="">4</h4>
+                                                <span><i class="fa-solid fa-building-columns mr-1 text-primary"></i>Events</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></a>
+                            </div>
+                            
+                                                        <div class="col-sm-12 col-lg-3 col-md-3 ">
+                            <a href="https://www.rtu.org.in/index/gallery.php?page=6">
+                                <div class="item-card overflow-hidden">
+                                    <div class="item-card-desc">
+                                        <div class="card text-center overflow-hidden">
+                                            <div class="card-img">
+                                                <img src="/assets/images/06092021034646-glimpse.jpg" alt="img" class="cover-image">
+                                            </div>
+                                            <div class="item-tags">
+                                                <div class="bg-primary tag-option"><i class="fa-solid fa-hand-pointer mr-1"></i> View More </div>
+                                            </div>
+                                            <div class="item-card-text">
+                                                <h4 class="">1</h4>
+                                                <span><i class="fa-solid fa-building-columns mr-1 text-primary"></i> Seminars &amp; Workshops</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></a>
+                            </div>
+                            
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--/Section-->
+
+        <!--Section-->
+        <section class="sptb position-relative pattern" style="display:none;">
+            <div class="container">
+                <div class="section-title center-block text-center">
+                    <h2 class="text-white position-relative">Best Trainers</h2>
+                    <span class="sectiontitle-design"><span class="icons"></span></span>
+                    <p class="text-white position-relative">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="myCarousel" class="owl-carousel testimonial-owl-carousel owl-loaded owl-drag">
+                            
+                            
+                            
+                        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all;"><div class="owl-item"><div class="item text-center">
+                                <div class="row">
+                                    <div class="col-xl-8 col-md-12 d-block mx-auto">
+                                        <div class="testimonia">
+                                            <div class="owl-controls clickable">
+                                                <div class="owl-pagination">
+                                                    <div class="owl-page active">
+                                                        <span class=""></span>
+                                                    </div>
+                                                    <div class="owl-page ">
+                                                        <span class=""></span>
+                                                    </div>
+                                                    <div class="owl-page">
+                                                        <span class=""></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h3 class="title">Elizabeth</h3>
+                                            <span class="post">Web Developer</span>
+                                            <div class="rating-stars mb-3">
+                                                <input type="number" readonly="readonly" class="rating-value star" name="rating-stars-value" value="4">
+                                                <div class="rating-stars-container">
+                                                    <div class="rating-star sm is--active">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="rating-star sm is--active">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="rating-star sm is--active">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="rating-star sm is--active">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="rating-star sm">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-white-80">
+                                                <i class="fa-solid fa-quote-left text-white-80"></i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                            </p>
+                                            <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-lg">View all Testimonials</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div></div><div class="owl-item"><div class="item text-center">
+                                <div class="row">
+                                    <div class="col-xl-8 col-md-12 d-block mx-auto">
+                                        <div class="testimonia">
+                                            <div class="owl-controls clickable">
+                                                <div class="owl-pagination">
+                                                    <div class="owl-page ">
+                                                        <span class=""></span>
+                                                    </div>
+                                                    <div class="owl-page active">
+                                                        <span class=""></span>
+                                                    </div>
+                                                    <div class="owl-page">
+                                                        <span class=""></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonia-data">
+                                                <h3 class="title">williamson</h3>
+                                                <span class="post">Web Developer</span>
+                                                <div class="rating-stars mb-3">
+                                                    <input type="number" readonly="readonly" class="rating-value star" name="rating-stars-value" value="3">
+                                                    <div class="rating-stars-container">
+                                                        <div class="rating-star sm is--active">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="rating-star sm is--active">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="rating-star sm is--active">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="rating-star sm">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="rating-star sm">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-white-80"><i class="fa-solid fa-quote-left"></i>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+                                            <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-lg">View all Testimonials</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div></div><div class="owl-item"><div class="item text-center">
+                                <div class="row">
+                                    <div class="col-xl-8 col-md-12 d-block mx-auto">
+                                        <div class="testimonia">
+                                            <div class="owl-controls clickable">
+                                                <div class="owl-pagination">
+                                                    <div class="owl-page ">
+                                                        <span class=""></span>
+                                                    </div>
+                                                    <div class="owl-page">
+                                                        <span class=""></span>
+                                                    </div>
+                                                    <div class="owl-page active">
+                                                        <span class=""></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonia-data">
+                                                <h3 class="title">Sophie Carr</h3>
+                                                <span class="post">Web Developer</span>
+                                                <div class="rating-stars mb-3">
+                                                    <input type="number" readonly="readonly" class="rating-value star" name="rating-stars-value" value="3">
+                                                    <div class="rating-stars-container">
+                                                        <div class="rating-star sm is--active">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="rating-star sm is--active">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="rating-star sm is--active">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="rating-star sm">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="rating-star sm">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-white-80"><i class="fa-solid fa-quote-left"></i>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                                            <a href="https://www.rtu.org.in/index/#" class="btn btn-primary btn-lg">View all Testimonials</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section><!--/Section-->
+
+        <!--Section-->
+        
+
+        <!--Section-->
+        <!--section class="sptb bg-white">
+            <div class="container">
+                <div class="section-title center-block text-center">
+                    <h2>Download e-Buddy</h2>
+                    <span class="sectiontitle-design"><span class="icons"></span></span>
+                    <p>Marksheet/Degree Correction Online Android Tracking Application</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center text-wrap">
+                            <div class="btn-list">
+                                
+                                <a href="https://play.google.com/store/apps/details?id=co.in.rtumis.exam&hl=en" class="btn btn-secondary btn-lg mb-sm-0"><i class="fa fa-android fa-1x mr-2"></i> Google Play</a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section--><!--/Section-->
+        
+<div id="imagePopup" style="display: none; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 99999;">
+
+    <span id="closePopup" style="
+    position:absolute;
+    top:10px;
+    right:20px;
+    color:#fff;
+    font-size:40px;
+    cursor:pointer;
+    ">×</span>
+
+    <img src="/assets/images/MercyChanceNotice 2026_page-0001.jpg" style="
+         max-width:90%;
+         max-height:90%;
+         position:absolute;
+         top:50%;
+         left:50%;
+         transform:translate(-50%,-50%);
+         ">
+</div>
+
+<script nonce="<%= typeof nonce !== 'undefined' ? nonce : '' %>" type="text/javascript">
+window.onload = function () {
+    document.getElementById("imagePopup").style.display = "block";
+};
+
+// Close on X button
+document.getElementById("closePopup").onclick = function () {
+    document.getElementById("imagePopup").style.display = "none";
+};
+
+// Close on click anywhere outside image
+document.getElementById("imagePopup").onclick = function (e) {
+    if (e.target === this) {
+        this.style.display = "none";
+    }
+};
+</script>
+        
+<%- include('partials/footer') %>
